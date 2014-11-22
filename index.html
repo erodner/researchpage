@@ -1,0 +1,262 @@
+---
+---
+
+<!DOCTYPE HTML>
+<!--
+	Helios by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Erik Rodner</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.dropotron.min.js"></script>
+		<script src="js/jquery.scrolly.min.js"></script>
+		<script src="js/jquery.onvisible.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-desktop.css" />
+			<link rel="stylesheet" href="css/style-noscript.css" />
+		</noscript>
+        <link href="bibworldfiles/bib_eriks.css" rel="stylesheet" type="text/css">
+        <script src="bibworldfiles/bib.js"></script>
+
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+	</head>
+	<body class="homepage">
+
+		<!-- Header -->
+			<div id="header">
+				<!-- Inner -->
+					<div class="inner">
+						<header>
+							<h1><a href="index.html" id="logo">Erik Rodner</a></h1>
+							<hr />
+							<p>
+                            Computer Vision and Machine Learning Researcher<br/>
+                            Friedrich Schiller University Jena
+                            </p>
+						</header>
+						<footer>
+							<a href="#banner" class="button scrolly">Start</a>
+						</footer>
+					</div>
+				
+                    {% include nav.html %}
+			</div>
+			
+        {% include news.html %}            
+
+		<!-- Carousel -->
+			<section class="carousel">
+				<div class="reel">
+				<section id="features" class="container special">
+                <a name="highlights"></a>
+					<header>
+						<h2>Research overview</h2>
+					</header>
+	
+                    <article>
+						<a href="lifelong.html" class="image centered"><img src="pimages/lifelong.png" alt="" /></a>
+						<header>
+							<h3><a href="lifelong.html">Lifelong Learning</a></h3>
+						</header>
+						Active Learning, Novelty Detection, Active Discovery, Large-scale Learning
+					</article>
+
+                    <article>
+						<a href="biomed.html" class="image centered"><img src="pimages/biomed.png" alt="" /></a>
+						<header>
+							<h3><a href="biomed.html">Bio-medical Applications</a></h3>
+						</header>
+                        Segmentation, Voxel Labeling, Classification, Microscopy
+					</article>
+
+                    <article>
+						<a href="deeplearning.html" class="image centered fit"><img src="pimages/simon_accv.png" alt="" /></a>
+						<header>
+							<h3><a href="deeplearning.html">Deep Learning</a></h3>
+						</header>
+                        CNN Part Detection, Open Vocabulary Object Retrieval
+					</article>
+				
+                    <article>
+						<a href="domainadaptation.html" class="image centered"><img src="pimages/domainadapt.png" alt="" /></a>
+						<header>
+							<h3><a href="domainadaptation.html">Domain Adaptation</a></h3>
+						</header>
+                        MMDT, Adaptive Object Detection, Learning with Few Examples
+						<!--<p>
+                        Domain adaptation deals with the problem that in many learning scenarios, training and test distribution differ from each other, due to sensor change, dataset selection bias, or circumstances.
+                        </p>
+                        -->
+					</article>
+
+					<article>
+						<a href="finegrained.html" class="image centered fit"><img src="pimages/finegrained.png" alt="" /></a>
+						<header>
+							<h3><a href="finegrained.html">Fine-grained Recognition</a></h3>
+						</header>
+                        Non-parametric Part Transfer, Part Discovery
+					</article>
+				
+					<article>
+						<a href="sun.html" class="image centered"><img src="pimages/semseg-rdf.png" alt="" /></a>
+						<header>
+							<h3><a href="sun.html">Scene Understanding</a></h3>
+						</header>
+                        Semantic Segmentation, Urban Scene Understanding
+					</article>
+				
+				</div>
+			</section>
+	
+            <!-- Banner -->
+			<section id="banner">
+                <a name="shortbio"></a>
+				<header>
+					<h2>Short bio</h2>
+				</header>
+                <article>
+                    <a href="pimages/erik.png" class="image left" style="width: 20%;"><img src="pimages/erik.png"></a>
+					<p>
+                    I am a senior researcher in the <a href="http://www.inf-cv.uni-jena.de">computer vision group</a> of the Friedrich Schiller University of Jena (Germany). I finished my PhD in 2011 supervised by <a href="http://www.inf-cv.uni-jena.de/denzler">Joachim Denzler</a> and I am currently heading the visual recognition part of the group now.
+                    </p>
+                    <p>
+                    In 2012/13, I worked as a PostDoc in the computer vision group of <a href="http://www.eecs.berkeley.edu/~trevor/">Trevor Darrell</a> at ICSI/EECS (UC Berkeley, California), where I focused on <a href="domainadaptation.html">domain adaptation</a> and <a href="deeplearning.html">open-vocabulary recognition</a>.
+                    In general, my research interests are mainly machine learning aspects of computer vision tasks, such as <a href="lifelong.html">lifelong learning</a> for object recognition and <a href="sun.html">scene understanding</a>. Furthermore, there is a wide range of applications I have worked on, including <a href="finegrained.html">bird species recognition</a>, <a href="biomed.html">bio-medical image analysis</a>, and driver assistance systems.
+                    </p>
+                    <p>
+                    I am happy to be able to work with a great team of PhD students in Jena on different research topics: <a href="http://www.inf-cv.uni-jena.de">Computer Vision Group Jena.</a>
+                    </p>
+                    <div style="clear: left;"></div>
+					<hr />
+                </article>
+			</section>
+
+            <section id="banner">
+                <a name="recent"></a>
+				<header>
+					<h2>Recent publications</h2>
+				</header>
+                <article>
+                {% include selectedpub.html %}
+                </article>
+            </section>
+
+            <section id="banner">
+				<header>
+					<h2>Teaching</h2>
+				</header>
+                <article>
+                    <p>
+                    I am involved in university teaching since 2008. Besides several projects, exercises, and seminars in the computer vision area, I also give two lectures in Jena.
+                    </p>
+					<ul class="divided">
+                    <li>
+                        <article>
+                            <header><h3>Visual Object Recognition</h3></header>
+                        </article>
+                        Lecture for graduate and undergraduate students covering the fundamentals of visual object recognitions: machine learning basics, local features, bag-of-visual-words, histogram of oriented gradient detectors, deformable part models, semantic segmentation with randomized decision forests, ...
+                        <a name="" class="image centered"><img style="width:80%;" src="images/visrec-teaser.png"></a>
+                    </li>
+                    <li>
+                        <article>
+                            <header><h3>Computer Science for Physics and Engineering</h3></header>
+                        </article>
+                        Lecture about programming and computer science for undergraduate students in physics and engineering. I mainly teach C++ programming and fundamentals in algorithmic design.
+                        <a name="" class="image centered"><img style="width:80%;" src="images/wewi-teaser.png"></a>
+                    </li>
+                    </ul>
+                            <hr />
+                </article>
+            </section>
+
+            <div id="banner">
+                <header>
+                <h2>Software and datasets</h2>
+                </header>
+				<div class="container">
+					<div class="row">
+						
+                        <!-- GitHub -->
+							<section class="6u">
+                            	<header>
+									<h2 class="icon fa-github circled"><span class="label">GitHub</span></h2>
+								</header>
+								<ul class="divided">
+                                <li>
+                                    <article class="post stub">
+                                        <header>
+                                            <h3><a href="#">NICE library</a></h3>
+                                        </header>
+                                        C++ library for computer vision and machine learning.
+                                    </article>
+                                </li>
+                                <li>
+                                    <article class="post stub">
+                                        <header>
+                                            <h3><a href="http://cvjena.github.io/artos/">ARTOS object detection</a></h3>
+                                        </header>
+                                        Object detection library and GUI in C++ and python, which allows for learning HOG detection
+                                        models from ImageNet in a few seconds. Developed by Björn Barz during a undergraduate thesis supervised by myself.
+                                    </article>
+                                </li>
+                                <li>
+                                     <article class="post stub">
+                                        <header>
+                                            <h3><a href="https://github.com/erodner/liblinear-mmdt">Large-scale domain adaptation</a></h3>
+                                        </header>
+                                        Large-scale version of MMDT implemented with liblinear.
+                                    </article>
+                                </li>
+                                <li>
+                                     <article class="post stub">
+                                        <header>
+                                            <h3>... many more on <a href="https://github.com/erodner">github/erodner</a> and <a href="https://github.com/cvjena">github/cvjena</a></h3>
+                                        </header>
+                                    </article>
+                                </li>
+                                </ul>
+                            </section>
+						
+                        <!-- Posts -->
+							<section class="6u">
+								<header>
+									<h2 class="icon fa-file circled"><span class="label">Posts</span></h2>
+								</header>
+								<ul class="divided">
+									<li>
+										<article class="post stub">
+											<header>
+												<h3><a href="http://www.inf-cv.uni-jena.de/Group/Staff/Former+Members/Dr_+Bj%C3%B6rn+Fr%C3%B6hlich-p-54/LabelMeFacade+Database.html">LabelMeFacade dataset</a></h3>
+											</header>
+                                            The dataset is a small subset of LabelMe for urban scene understanding and has been used in my work on semantic segmentation.
+											<span class="timestamp">11/11/14</span>
+										</article>
+									</li>
+                                    <li>
+                                	<article class="post stub">
+											<header>
+												<h3><a href="http://www.icsi.berkeley.edu/~erik/office-bb.tar">Office 2.0 dataset</a></h3>
+											</header>
+											To perform quantitative experiments with object detection and domain adaptation, I used Amazon Mechanical Turk to annotate the <a href="http://www.cs.uml.edu/~saenko/projects.html#data">Office dataset</a> of Kate Saenko. 
+                                            <span class="timestamp">02/01/14</span>
+										</article>
+									</li>
+
+								</ul>
+							</section>
+					</div>
+			</div>
+
+{% include footer.html %}
