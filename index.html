@@ -120,13 +120,14 @@
 				</div>
 			</section>
 	
-            <!-- Banner -->
-			<section id="banner">
+			
+            <div class="wrapper style2">
                 <a name="shortbio"></a>
-				<header>
-					<h2>Short bio</h2>
-				</header>
-                <article>
+                <article class="container special">
+                    <header>
+					    <h2>Short bio</h2>
+				    </header>
+
                     <a href="pimages/erik.png" class="image left" style="width: 20%;"><img src="pimages/erik.png"></a>
 					<p>
                     I am a senior researcher in the <a href="http://www.inf-cv.uni-jena.de">computer vision group</a> of the Friedrich Schiller University of Jena (Germany). I finished my PhD in 2011 supervised by <a href="http://www.inf-cv.uni-jena.de/denzler">Joachim Denzler</a> and I am currently heading the visual recognition part of the group now.
@@ -141,23 +142,24 @@
                     <div style="clear: left;"></div>
 					<hr />
                 </article>
-			</section>
+			</div>
 
-            <section id="banner">
+            <div class="wrapper style2">
                 <a name="recent"></a>
-				<header>
+                <article class="container special">
+                <header>
 					<h2>Recent publications</h2>
 				</header>
-                <article>
+
                 {% include selectedpub.html %}
                 </article>
-            </section>
+            </div>
 
-            <section id="banner">
+            <div class="wrapper style2">
+                <article class="container special">
 				<header>
 					<h2>Teaching</h2>
 				</header>
-                <article>
                     <p>
                     I am involved in university teaching since 2008. Besides several projects, exercises, and seminars in the computer vision area, I also give two lectures in Jena.
                     </p>
@@ -179,17 +181,17 @@
                     </ul>
                             <hr />
                 </article>
-            </section>
+            </div>
 
-            <div id="banner">
-                <header>
-                <h2>Software and datasets</h2>
-                </header>
-				<div class="container">
+            <div class="wrapper style1">
+				<section class="container special">
+                    <header>
+                    <h2>Software and datasets</h2>
+                    </header>
+
 					<div class="row">
-						
                         <!-- GitHub -->
-							<section class="6u">
+							<section class="6u special">
                             	<header>
 									<h2 class="icon fa-github circled"><span class="label">GitHub</span></h2>
 								</header>
@@ -230,7 +232,7 @@
                             </section>
 						
                         <!-- Posts -->
-							<section class="6u">
+							<section class="6u special">
 								<header>
 									<h2 class="icon fa-file circled"><span class="label">Posts</span></h2>
 								</header>
@@ -256,7 +258,8 @@
 
 								</ul>
 							</section>
-					</div>
+                        </div>
+					</section>
 			</div>
 
 {% include footer.html %}
