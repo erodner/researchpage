@@ -1,0 +1,107 @@
+<meta charset="utf-8">
+<html>
+  <head>
+    <title>Behandlungsorte für Hydrocephalus Patienten</title>
+    <style>
+       #map {
+        height: 400px;
+        width: 100%;
+       }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script charset="utf-8">
+      function initMap() {
+        var positions = [];
+        positions.push({ shortname:'Klinikum der Universität München', name:'Campus Großhadern, Marchioninistraße 15, 81377 München, Deutschland', url:'http://www.klinikum.uni-muenchen.de/', phone:'089 44000', count:1, pos:{lat: 48.1113273, lng: 11.4692971} });
+        positions.push({ shortname:'Klinikum der Universität Regensburg', name:'Franz-Josef-Strauß-Allee 11, 93053 Regensburg, Deutschland', url:'http://www.uniklinikum-regensburg.de/', phone:'0941 9440', count:1, pos:{lat: 48.9882217, lng: 12.0891177} });
+        positions.push({ shortname:'Ev. Krankenhaus Lippstadt', name:'Wiedenbrücker Str. 33, 59555 Lippstadt, Deutschland', url:'http://www.ev-krankenhaus.de/', phone:'02941 670', count:1, pos:{lat: 51.6851418, lng: 8.3429889} });
+        positions.push({ shortname:'Dortmund', name:'Dortmund, Deutschland', url:'Unbekannt', phone:'Unbekannt', count:1, pos:{lat: 51.5135872, lng: 7.465298100000001} });
+        positions.push({ shortname:'Asklepios Klinik Nord', name:'Tangstedter Landstraße 400, 22417 Hamburg, Deutschland', url:'http://www.asklepios.com/nord', phone:'040 1818870', count:1, pos:{lat: 53.6746928, lng: 10.0289498} });
+        positions.push({ shortname:'Universitätsklinikum Würzburg', name:'Josef-Schneider-Straße 2, 97080 Würzburg, Deutschland', url:'http://www.uk-wuerzburg.de/', phone:'0931 2010', count:1, pos:{lat: 49.8007, lng: 9.95373} });
+        positions.push({ shortname:'Universitätsklinikum Magdeburg', name:'Haus 26, Leipziger Str. 44, 39120 Magdeburg, Deutschland', url:'http://www.med.uni-magdeburg.de/', phone:'0391 6701', count:1, pos:{lat: 52.10250850000001, lng: 11.6162289} });
+        positions.push({ shortname:'Universitätsmedizin der Johannes Gutenberg-Universität Mainz', name:'Langenbeckstraße 1, 55131 Mainz, Deutschland', url:'http://www.unimedizin-mainz.de/', phone:'06131 170', count:1, pos:{lat: 49.9928931, lng: 8.258750299999999} });
+        positions.push({ shortname:'Sozialpädiatrisches Zentrum der Kinderklinik des Uni-Klinikums Erlangen', name:'Loschgestraße 15, 91054 Erlangen, Deutschland', url:'http://www.kinderklinik.uk-erlangen.de/universitaetsmedizin/leistungsspektrum/interdisziplinaere-zentren/sozialpaediatrisches-zentrum/', phone:'09131 8532146', count:1, pos:{lat: 49.599987, lng: 11.0087059} });
+        positions.push({ shortname:'Universitätsklinikum Jena, Bachstraße', name:'Universitätsklinikum Jena, Bachstraße 18, 07743 Jena, Deutschland', url:'http://www.uniklinikum-jena.de/Wir_%C3%BCber_uns.html', phone:'03641 9300', count:1, pos:{lat: 50.92869899999999, lng: 11.579942} });
+        positions.push({ shortname:'HELIOS Klinikum Erfurt', name:'Nordhäuser Str. 74, 99089 Erfurt, Deutschland', url:'http://www.helios-kliniken.de/erfurt', phone:'0361 7810', count:4, pos:{lat: 50.9914765, lng: 11.0122651} });
+        positions.push({ shortname:'Klinikum Stuttgart Olgahospital / Frauenklinik', name:'Kriegsbergstraße 62, 70174 Stuttgart, Deutschland', url:'http://www.klinikum-stuttgart.de/', phone:'0711 27804', count:1, pos:{lat: 48.7843055, lng: 9.172324300000001} });
+        positions.push({ shortname:'Universitätsklinikum Carl Gustav Carus Dresden', name:'Fetscherstraße 74, 01307 Dresden, Deutschland', url:'http://www.uniklinikum-dresden.de/', phone:'0351 4580', count:1, pos:{lat: 51.05696080000001, lng: 13.7823004} });
+        positions.push({ shortname:'Kinderkrankenhaus Auf der Bult', name:'Janusz-Korczak-Allee 12, 30173 Hannover, Deutschland', url:'http://www.auf-der-bult.de/', phone:'0511 81150', count:1, pos:{lat: 52.3601888, lng: 9.7781915} });
+        positions.push({ shortname:'Asklepios Klinik Sankt Augustin', name:'Arnold-Janssen-Straße 29, 53757 Sankt Augustin, Deutschland', url:'http://www.asklepios.com/sanktaugustin/', phone:'02241 2490', count:2, pos:{lat: 50.77535169999999, lng: 7.181976799999999} });
+        positions.push({ shortname:'UMM - Universitätsmedizin Mannheim', name:'Theodor-Kutzer-Ufer 1-3, 68167 Mannheim, Deutschland', url:'http://www.umm.de/', phone:'0621 3830', count:1, pos:{lat: 49.491923, lng: 8.485597} });
+        positions.push({ shortname:'Universitätsklinikum Tübingen', name:'Geissweg 3, 72076 Tübingen, Deutschland', url:'http://www.medizin.uni-tuebingen.de/', phone:'07071 290', count:1, pos:{lat: 48.52556930000001, lng: 9.0526366} });
+        positions.push({ shortname:'St. Vinzenz-Hospital', name:'Doktor-Otto-Seidel-Straße 31, 46535 Dinslaken, Deutschland', url:'http://www.st-vinzenz-hospital.de/', phone:'02064 440', count:1, pos:{lat: 51.5593472, lng: 6.7265243} });
+        positions.push({ shortname:'Diakonissenkrankenhaus Flensburg', name:'Marienhölzungsweg 2, 24939 Flensburg, Deutschland', url:'http://www.diako.de/', phone:'0461 81201', count:1, pos:{lat: 54.7896091, lng: 9.4265057} });
+        positions.push({ shortname:'Klinikum der Universität München', name:'Campus Großhadern, Marchioninistraße 15, 81377 München, Deutschland', url:'http://www.klinikum.uni-muenchen.de/', phone:'089 44000', count:1, pos:{lat: 48.1113273, lng: 11.4692971} });
+        positions.push({ shortname:'Virchow Klinikum', name:'Amrumer Str., 13353 Berlin, Deutschland', url:'https://www.charite.de/die_charite/campi/campus_virchow_klinikum/', phone:'Unbekannt', count:4, pos:{lat: 52.5438286, lng: 13.3471026} });
+        positions.push({ shortname:'Klinik St. Hedwig', name:'Steinmetzstraße 1-3, 93049 Regensburg, Deutschland', url:'http://www.barmherzige-regensburg.de/904.html', phone:'0941 36998', count:1, pos:{lat: 49.016426, lng: 12.078256} });
+        positions.push({ shortname:'Kinderkrankenhaus Auf der Bult', name:'Janusz-Korczak-Allee 12, 30173 Hannover, Deutschland', url:'http://www.auf-der-bult.de/', phone:'0511 81150', count:1, pos:{lat: 52.3601888, lng: 9.7781915} });
+        positions.push({ shortname:'Universitätsklinikum Halle (Saale)', name:'Ernst-Grube-Straße 40, 06120 Halle (Saale), Deutschland', url:'http://www.medizin.uni-halle.de/', phone:'0345 5570', count:1, pos:{lat: 51.50135299999999, lng: 11.936416} });
+        positions.push({ shortname:'Uniklinik RWTH Aachen', name:'Pauwelsstraße 30, 52074 Aachen, Deutschland', url:'http://www.ukaachen.de', phone:'0241 800', count:1, pos:{lat: 50.77682300000001, lng: 6.043384999999999} });
+        positions.push({ shortname:'Klinikum Saarbrücken', name:'Winterberg 1, 66119 Saarbrücken, Deutschland', url:'http://www.klinikum-saarbruecken.de/', phone:'0681 9630', count:1, pos:{lat: 49.2211606, lng: 6.9973469} });
+        positions.push({ shortname:'Klinikum Nürnberg Süd', name:'Breslauer Str. 201, 90471 Nürnberg, Deutschland', url:'http://www.klinikum-nuernberg.de/', phone:'0911 3980', count:1, pos:{lat: 49.4128204, lng: 11.1484782} });
+        positions.push({ shortname:'Kinderklinik und Kinderpoliklinik im Dr. von Haunerschen Kinderspital', name:'Lindwurmstraße 4, 80337 München, Deutschland', url:'http://www.kinderklinik.klinikum.uni-muenchen.de/', phone:'089 440052811', count:1, pos:{lat: 48.1302692, lng: 11.5591988} });
+        positions.push({ shortname:'Universitätsklinikum Halle (Saale)', name:'Ernst-Grube-Straße 40, 06120 Halle (Saale), Deutschland', url:'http://www.medizin.uni-halle.de/', phone:'0345 5570', count:1, pos:{lat: 51.50135299999999, lng: 11.936416} });
+        positions.push({ shortname:'AKK Altonaer Kinderkrankenhaus gGmbH', name:'Bleickenallee 38, 22763 Hamburg, Deutschland', url:'http://www.kinderkrankenhaus.net/', phone:'040 889080', count:1, pos:{lat: 53.55287300000001, lng: 9.913481000000001} });
+        positions.push({ shortname:'Sozialmedizinisches Zentrum Ost - Donauspital', name:'Langobardenstraße 122, 1220 Wien, Österreich', url:'http://www.wienkav.at/kav/dsp/', phone:'01 288020', count:1, pos:{lat: 48.21811069999999, lng: 16.4643753} });
+        positions.push({ shortname:'Universitätsklinikum Münster', name:'Albert-Schweitzer-Campus 1, 48149 Münster, Deutschland', url:'http://klinikum.uni-muenster.de/', phone:'0251 830', count:3, pos:{lat: 51.96083400000001, lng: 7.596279} });
+        positions.push({ shortname:'Universitätsklinikum Marburg', name:'Baldingerstraße, 35043 Marburg, Deutschland', url:'http://www.ukgm.de/ugm_2/deu/umr_lpl/27708.html', phone:'06421 5860', count:1, pos:{lat: 50.81455149999999, lng: 8.8059283} });
+        positions.push({ shortname:'Asklepios Klinik Sankt Augustin', name:'Arnold-Janssen-Straße 29, 53757 Sankt Augustin, Deutschland', url:'http://www.asklepios.com/sanktaugustin/', phone:'02241 2490', count:1, pos:{lat: 50.77535169999999, lng: 7.181976799999999} });
+        positions.push({ shortname:'Zentralklinik Bad Berka', name:'Robert-Koch-Allee 9, 99438 Bad Berka, Deutschland', url:'http://zentralklinik.de/', phone:'036458 50', count:1, pos:{lat: 50.8898187, lng: 11.2663757} });
+        positions.push({ shortname:'Kinderkrankenhaus Auf der Bult', name:'Janusz-Korczak-Allee 12, 30173 Hannover, Deutschland', url:'http://www.auf-der-bult.de/', phone:'0511 81150', count:1, pos:{lat: 52.3601888, lng: 9.7781915} });
+        positions.push({ shortname:'Klinikum Dortmund gGmbH Abteilung für Kinderchirurgische Klinik', name:'Beurhausstraße 40, 44137 Dortmund, Deutschland', url:'http://www.klinikumdo.de/', phone:'0231 95321630', count:1, pos:{lat: 51.50798, lng: 7.457950000000002} });
+        positions.push({ shortname:'Klinikum der Universität München', name:'Campus Großhadern, Marchioninistraße 15, 81377 München, Deutschland', url:'http://www.klinikum.uni-muenchen.de/', phone:'089 44000', count:1, pos:{lat: 48.1113273, lng: 11.4692971} });
+        positions.push({ shortname:'Virchow Klinikum', name:'Amrumer Str., 13353 Berlin, Deutschland', url:'https://www.charite.de/die_charite/campi/campus_virchow_klinikum/', phone:'Unbekannt', count:3, pos:{lat: 52.5438286, lng: 13.3471026} });
+        positions.push({ shortname:'Asklepios Klinik Sankt Augustin', name:'Arnold-Janssen-Straße 29, 53757 Sankt Augustin, Deutschland', url:'http://www.asklepios.com/sanktaugustin/', phone:'02241 2490', count:1, pos:{lat: 50.77535169999999, lng: 7.181976799999999} });
+        positions.push({ shortname:'Georg-August-Universität Göttingen', name:'Wilhelmsplatz 1, 37073 Göttingen, Deutschland', url:'http://www.uni-goettingen.de/', phone:'0551 390', count:1, pos:{lat: 51.5408116, lng: 9.937400400000001} });
+        positions.push({ shortname:'Kinderkrankenhaus Auf der Bult', name:'Janusz-Korczak-Allee 12, 30173 Hannover, Deutschland', url:'http://www.auf-der-bult.de/', phone:'0511 81150', count:1, pos:{lat: 52.3601888, lng: 9.7781915} });
+        positions.push({ shortname:'Universitätsklinik Hamburg-Eppendorf', name:'Martinistraße 52, 20246 Hamburg, Deutschland', url:'https://www.uke.de/index.html', phone:'040 74100', count:1, pos:{lat: 53.5912154, lng: 9.973896200000002} });
+        positions.push({ shortname:'Klinikum Kassel', name:'43, Mönchebergstraße 41, 34125 Kassel, Deutschland', url:'http://www.klinikum-kassel.de/', phone:'0561 9800', count:1, pos:{lat: 51.328024, lng: 9.509537999999999} });
+        positions.push({ shortname:'Universitätsklinikum Leipzig', name:'Liebigstraße 18, 04103 Leipzig, Deutschland', url:'http://www.uniklinikum-leipzig.de/', phone:'0341 97109', count:1, pos:{lat: 51.33086839999999, lng: 12.386334} });
+        positions.push({ shortname:'Universitätsklinikum Carl Gustav Carus Dresden', name:'Fetscherstraße 74, 01307 Dresden, Deutschland', url:'http://www.uniklinikum-dresden.de/', phone:'0351 4580', count:2, pos:{lat: 51.05696080000001, lng: 13.7823004} });
+        positions.push({ shortname:'Asklepios Klinik Sankt Augustin', name:'Arnold-Janssen-Straße 29, 53757 Sankt Augustin, Deutschland', url:'http://www.asklepios.com/sanktaugustin/', phone:'02241 2490', count:1, pos:{lat: 50.77535169999999, lng: 7.181976799999999} });
+        positions.push({ shortname:'UKD - Zentrum für Operative Medizin II (ZOM II)', name:'Geb. 11.51 - 11.54, Moorenstraße 5, 40225 Düsseldorf', url:'http://www.uniklinik-duesseldorf.de/', phone:'0211 8108267', count:1, pos:{lat: 51.19898, lng: 6.78782} });
+        positions.push({ shortname:'Universitätsklinik Hamburg-Eppendorf', name:'Martinistraße 52, 20246 Hamburg, Deutschland', url:'https://www.uke.de/index.html', phone:'040 74100', count:1, pos:{lat: 53.5912154, lng: 9.973896200000002} });
+        positions.push({ shortname:'Klinik für Kinder- und Jugendmedizin', name:'Werler Str. 110, 59065 Hamm, Deutschland', url:'http://www.evkhamm.de/klinik-fuer-kinder-und-jugendmedizin.html', phone:'02381 5893210', count:1, pos:{lat: 51.6692712, lng: 7.8288919} });
+        positions.push({ shortname:'AKK Altonaer Kinderkrankenhaus gGmbH', name:'Bleickenallee 38, 22763 Hamburg, Deutschland', url:'http://www.kinderkrankenhaus.net/', phone:'040 889080', count:1, pos:{lat: 53.55287300000001, lng: 9.913481000000001} });
+        positions.push({ shortname:'Klinikum Ludwigsburg', name:'Posilipostraße 4, 71640 Ludwigsburg, Deutschland', url:'http://www.klinikum-ludwigsburg.de/', phone:'07141 9990', count:1, pos:{lat: 48.89866190000001, lng: 9.203439099999999} });
+        positions.push({ shortname:'Georg-August-Universität Universitätsmedizin Göttingen', name:'Robert-Koch-Straße 40, 37075 Göttingen, Deutschland', url:'http://www.med.uni-goettingen.de/', phone:'0551 390', count:1, pos:{lat: 51.5505168, lng: 9.942163299999999} });
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: positions[0]['pos']
+        });
+        var markers = [];
+        infowindow = new google.maps.InfoWindow();
+        for (var i = 0; i<positions.length; i++) {
+            p = positions[i];
+            content =
+      '<div id="content">'+
+      '<div id="siteNotice">'+
+      '</div>'+
+      '<h1 id="firstHeading" class="firstHeading">' + p['shortname'] + '</h1>'+
+      '<div id="bodyContent">'+
+      'Adresse: ' + p['name']+'<br>'+
+      'URL: <a href='+p['url']+'>' +p['url']+'</a>,<br>'+
+      'Telefon:'+p['phone']+'<br>'+
+      'Anzahl Patienten:'+p['count']+
+      '</div>'+
+      '</div>';
+            markers.push(new google.maps.Marker({
+                position: p['pos'],
+                title: p['shortname'],
+                map: map,
+                html: content
+            }));
+            markers[i].addListener('click', function() {
+                infowindow.setContent(this.html)
+                infowindow.open(map, this);
+            });
+        }
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD1RB9MolDymRLWEhCyHYviL4LdYaviwgw&callback=initMap">
+    </script>
+  </body>
+</html>
