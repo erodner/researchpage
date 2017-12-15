@@ -1,5 +1,5 @@
 {
     "year":"(2016|2017)",
     "author": "Rodner",
-    "venue": "(BMVC|arXiv|ICCV|CVPR|NIPS|ECCV|IJCV|Neck|JMLR|ICML|GCPR|ACCV)"
+    "venue": "(Scientific Reports|BMVC|arXiv|ICCV|CVPR|NIPS|ECCV|IJCV|Neck|JMLR|ICML|GCPR|ACCV)"
 }
