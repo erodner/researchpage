@@ -8,291 +8,152 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>Erik Rodner</title>
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta name="description" content="" />
-		<meta name="keywords" content="" />
-		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
-		<script src="js/jquery.min.js"></script>
-		<script src="js/jquery.dropotron.min.js"></script>
-		<script src="js/jquery.scrolly.min.js"></script>
-		<script src="js/jquery.onvisible.min.js"></script>
-		<script src="js/skel.min.js"></script>
-		<script src="js/skel-layers.min.js"></script>
-		<script src="js/init.js"></script>
-		<noscript>
-			<link rel="stylesheet" href="css/skel.css" />
-			<link rel="stylesheet" href="css/style.css" />
-			<link rel="stylesheet" href="css/style-desktop.css" />
-			<link rel="stylesheet" href="css/style-noscript.css" />
-		</noscript>
-        <link href="bibworldfiles/bib_eriks.css" rel="stylesheet" type="text/css">
-        <script src="bibworldfiles/bib.js"></script>
 
-		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
-	</head>
-	<body class="homepage">
+<head>
+    <title>Erik Rodner</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.dropotron.min.js"></script>
+    <script src="js/jquery.scrolly.min.js"></script>
+    <script src="js/jquery.onvisible.min.js"></script>
+    <script src="js/skel.min.js"></script>
+    <script src="js/skel-layers.min.js"></script>
+    <script src="js/init.js"></script>
+    <noscript>
+        <link rel="stylesheet" href="css/skel.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/style-desktop.css" />
+        <link rel="stylesheet" href="css/style-noscript.css" />
+    </noscript>
+    <link href="bibworldfiles/bib_eriks.css" rel="stylesheet" type="text/css">
+    <script src="bibworldfiles/bib.js"></script>
 
-		<!-- Header -->
-			<div id="header">
-				<!-- Inner -->
-					<div class="inner">
-						<header>
-							<h1><a href="index.html" id="logo">Erik Rodner</a></h1>
-							<hr />
-							<p>
-                            Computer Vision and Machine Learning Researcher, Data Scientist<br/>
-                            ZEISS Corporate Research<br/>
-                            <s>University of California, Berkeley</s><br/>
-                            <s>Friedrich Schiller University Jena</s>
-                            </p>
-						</header>
-						<footer>
-							<a href="#banner" class="button scrolly">Start</a>
-						</footer>
-					</div>
-				
-                    {% include nav.html %}
-			</div>
-			
-        {% include news.html %}            
+    <!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+</head>
 
-		<!-- Carousel -->
-			<section class="carousel">
-				<div class="reel">
-				<section id="features" class="container special">
+<body class="homepage">
+
+    <!-- Header -->
+    <div id="header">
+        <!-- Inner -->
+        <div class="inner">
+            <header>
+                <h1><a href="index.html" id="logo">Erik Rodner</a></h1>
+                <hr />
+                <p>
+                    Professor (Machine Learning, Data Science, Industrial IoT)<br />
+                    University of Applied Sciences, Berlin<br />
+                    <s>ZEISS Corporate Research</s><br />
+                    <s>UC Berkeley</s>, <s>FSU Jena</s>
+                </p>
+            </header>
+            <footer>
+                <a href="#banner" class="button scrolly">Start</a>
+            </footer>
+        </div>
+
+        {% include nav.html %}
+    </div>
+
+    <div class="wrapper style2">
+        <a name="shortbio"></a>
+        <article class="container special">
+            <header>
+                <h2></h2>
+            </header>
+
+            <a href="pimages/erik.png" class="image left" style="width: 20%;"><img src="pimages/erik.png"></a>
+            <p>
+                I am a professor for machine learning, data science, and industrial IoT at University of
+                Applied Sciences Berlin. My research activities span areas such as learning with limited data,
+                building robust visual recognition models for quality control and medical image analysis, as well
+                as combining annotation and learning workflows.
+            </p>
+            <p>
+                Previously, I was leading the machine learning team at the corporate research department of the <a
+                    href="http://www.zeiss.de">ZEISS Group</a> develop machine learning solutions for a wide range
+                of products.
+                Furthermore, I have been a lecturer in the <a href="http://www.inf-cv.uni-jena.de">computer vision
+                    group</a> at
+                the
+                Friedrich Schiller University of Jena (Germany) leading the machine learning research activities and
+                I worked as a PostDoc in the computer vision group of <a
+                    href="http://www.eecs.berkeley.edu/~trevor/">Trevor Darrell</a> at ICSI/EECS (UC Berkeley,
+                California).
+            </p>
+            <p>
+            <div style="clear: left;"></div>
+        </article>
+    </div>
+
+    {% include news.html %}
+
+    <!-- Carousel -->
+    <section class="carousel">
+        <div class="reel">
+            <section id="features" class="container special">
                 <a name="highlights"></a>
-					<header>
-                        <h2>Publications in categories</h2>
-                    </header>
-
-                    <article>
-						<a href="lifelong.html" class="image centered"><img src="pimages/lifelong.png" alt="" /></a>
-						<header>
-							<h3><a href="lifelong.html">Lifelong Learning</a></h3>
-						</header>
-						Active Learning, Novelty Detection, Active Discovery, Large-scale Data Analysis
-					</article>
-
-                    <article>
-						<a href="biomed.html" class="image centered"><img src="pimages/biomed.png" alt="" /></a>
-						<header>
-							<h3><a href="biomed.html">Bio-medical Applications</a></h3>
-						</header>
-                        Segmentation, Voxel Labeling, Classification, Microscopy
-					</article>
-
-                    <article>
-						<a href="deeplearning.html" class="image centered fit"><img src="pimages/simon_accv.png" alt="" /></a>
-						<header>
-							<h3><a href="deeplearning.html">Deep Learning</a></h3>
-						</header>
-                        CNN Part Detection, Open Vocabulary Object Retrieval
-					</article>
-				
-                    <article>
-						<a href="domainadaptation.html" class="image centered"><img src="pimages/domainadapt.png" alt="" /></a>
-						<header>
-							<h3><a href="domainadaptation.html">Domain Adaptation</a></h3>
-						</header>
-                        MMDT, Adaptive Object Detection, Learning with Few Examples
-						<!--<p>
-                        Domain adaptation deals with the problem that in many learning scenarios, training and test distribution differ from each other, due to sensor change, dataset selection bias, or circumstances.
-                        </p>
-                        -->
-					</article>
-
-					<article>
-						<a href="finegrained.html" class="image centered fit"><img src="pimages/finegrained.png" alt="" /></a>
-						<header>
-							<h3><a href="finegrained.html">Fine-grained Recognition</a></h3>
-						</header>
-                        Non-parametric Part Transfer, Part Discovery
-					</article>
-				
-					<article>
-						<a href="sun.html" class="image centered"><img src="pimages/semseg-rdf.png" alt="" /></a>
-						<header>
-							<h3><a href="sun.html">Scene Understanding</a></h3>
-						</header>
-                        Semantic Segmentation, Urban Scene Understanding
-					</article>
-                    
-                    <footer>
-                    <p>
-                    I only maintain a list of publications on this webpage. For more information about individual research projects, please visit the <a href="http://www.inf-cv.uni-jena.de/research">research page</a> of <a href="http://www.inf-cv.uni-jena.de/denzler">Joachim Denzler's</a> computer vision group.
-                    </p>
-				    </footer>
-				</div>
-			</section>
-	
-			
-            <div class="wrapper style2">
-                <a name="shortbio"></a>
-                <article class="container special">
-                    <header>
-					    <h2>Short bio</h2>
-				    </header>
-
-                    <a href="pimages/erik.png" class="image left" style="width: 20%;"><img src="pimages/erik.png"></a>
-                    <p>
-                    I am leading the machine learning team at the corporate research department of the <a href="http://www.zeiss.de">ZEISS Group</a>,
-                    where my team and I develop machine learning solutions for a wide range of products.
-                    </p>
-					<p>
-                    Previously, I was a lecturer in the <a href="http://www.inf-cv.uni-jena.de">computer vision group</a> at the 
-		    Friedrich Schiller University of Jena (Germany) leading the machine learning research activities in the group. 
-		    </p><p>			
-		    I finished my PhD in 2011 supervised 
-		    by <a href="http://www.inf-cv.uni-jena.de/denzler">Joachim Denzler</a> (PhD topic: transfer learning, learning with few examples) and I was heading the machine learning and visual recognition part of the group.
-                    </p>
-                    <p>
-                    In 2012/13, I worked as a PostDoc in the computer vision group of <a href="http://www.eecs.berkeley.edu/~trevor/">Trevor Darrell</a> at ICSI/EECS (UC Berkeley, California), where I focused on <a href="domainadaptation.html">domain adaptation</a> and <a href="deeplearning.html">open-vocabulary recognition</a>.
-                    In general, my research interests are mainly machine learning aspects of computer vision tasks, such as <a href="lifelong.html">lifelong learning</a> for object recognition and <a href="sun.html">scene understanding</a> as well as general data analytics in the life sciences. Furthermore, there is a wide range of applications I have worked on, including <a href="finegrained.html">bird species recognition</a>, <a href="biomed.html">bio-medical image analysis</a>, and driver assistance systems.
-                    </p>
-                    <p>
-                    <div style="clear: left;"></div>
-                </article>
-			</div>
-
-            <div class="wrapper style2">
-                <a name="recent"></a>
-                <article class="container special">
                 <header>
-					<h2>Recent and selected publications</h2>
-				</header>
+                    <h2>Research areas</h2>
+                </header>
 
-                {% include selectedpub.html %}
-                </article>
-            </div>
-
-            <div class="wrapper style2">
-                <article class="container special">
-				<header>
-					<h2>Teaching</h2>
-				</header>
-                    <p>
-                    I am involved in university teaching since 2008. Besides several projects, exercises, and seminars in the computer vision area, I also give two lectures in Jena.
-                    </p>
-					<ul class="divided">
-                    <li>
-                        <article>
-                            <header><h3>Visual Object Recognition</h3></header>
-                        </article>
-                        Lecture for graduate and undergraduate students covering the fundamentals of visual object recognition: machine learning basics, local features, bag-of-visual-words, histogram of oriented gradient detectors, deformable part models, semantic segmentation with randomized decision forests, ...
-                        <a name="" class="image centered"><img style="width:80%;" src="images/visrec-teaser.png"></a>
-                    </li>
-                    <li>
-                        <article>
-                            <header><h3>Computer Science and Data Science for Physics and Engineering</h3></header>
-                        </article>
-                        Lecture about scientific programming and computer science for undergraduate students in physics and engineering. I mainly teach python and C++ programming, data analysis, and fundamentals in algorithmic design.
-                        <a name="" class="image centered"><img style="width:80%;" src="images/wewi-teaser.png"></a>
-                    </li>
-                    </ul>
-                </article>
-            </div>
-
-            <div class="wrapper style1">
-				<section class="container special">
+                <article>
+                    <div class="image centered"><img src="pimages/lifelong.png" alt="" /></div>
                     <header>
-                    <h2>Software and datasets</h2>
+                        <h3><a href="limiteddata.html">Learning with limited data</a></h3>
                     </header>
-					<div class="row">
-                        <!-- GitHub -->
-							<section class="6u special">
-                            	<header>
-									<h2 class="icon fa-github circled"><span class="label">GitHub</span></h2>
-								</header>
-								<ul class="divided">
-                                <li>
-                                    <article class="post stub">
-                                        <header>
-                                            <h3><a href="#">NICE library</a></h3>
-                                        </header>
-                                        C++ library for computer vision and machine learning.
-                                    </article>
-                                </li>
-                                <li>
-                                    <article class="post stub">
-                                        <header>
-                                            <h3><a href="http://cvjena.github.io/cn24/">CN24: CNN semantic segmentation</a></h3>
-                                            </header>
-                                        Convolutional neural network library for semantic segmentation and pixel-wise labeling.
-                                        GPU acceleration is based on OpenCL. Developed by Clemens-Alexander Brust during an undergraduate thesis
-                                    </article>
-                                </li>
+                    Active and Adaptive Learning, Novelty Detection
+                </article>
 
-                                <li>
-                                    <article class="post stub">
-                                        <header>
-                                            <h3><a href="http://cvjena.github.io/artos/">ARTOS object detection</a></h3>
-                                        </header>
-                                        Object detection library and GUI in C++ and python, which allows for learning HOG detection
-                                        models from ImageNet in a few seconds. Developed by Björn Barz during an undergraduate thesis supervised by myself.
-                                    </article>
-                                </li>
-                                <li>
-                                     <article class="post stub">
-                                        <header>
-                                            <h3><a href="https://github.com/erodner/liblinear-mmdt">Large-scale domain adaptation</a></h3>
-                                        </header>
-                                        Large-scale version of MMDT implemented with liblinear.
-                                    </article>
-                                </li>
-                                <li>
-                                     <article class="post stub">
-                                        <header>
-                                            <h3>... many more on <a href="https://github.com/erodner">github/erodner</a> and <a href="https://github.com/cvjena">github/cvjena</a></h3>
-                                        </header>
-                                    </article>
-                                </li>
-                                </ul>
-                            </section>
-						
-                        <!-- Posts -->
-							<section class="6u special">
-								<header>
-									<h2 class="icon fa-file circled"><span class="label">Posts</span></h2>
-								</header>
-								<ul class="divided">
-									<li>
-										<article class="post stub">
-											<header>
-												<h3><a href="https://www.dropbox.com/s/5kmo3arlz8cm5dw/LabelMeFacade.tar.gz?dl=0">LabelMeFacade dataset for scene understanding</a></h3>
-											</header>
-                                            The <a href="https://www.dropbox.com/s/5kmo3arlz8cm5dw/LabelMeFacade.tar.gz?dl=0">dataset</a> is a small subset of LabelMe for urban scene understanding and has been used in Björn's and my work on semantic segmentation.
-											<span class="timestamp">11/11/14</span>
-										</article>
-									</li>
-                                    <li>
-                                	<article class="post stub">
-											<header>
-												<h3><a href="http://www.icsi.berkeley.edu/~erik/office-bb.tar">Office 2.0 dataset</a></h3>
-											</header>
-											To perform quantitative experiments with object detection and domain adaptation, I used Amazon Mechanical Turk to annotate the <a href="http://www.cs.uml.edu/~saenko/projects.html#data">Office dataset</a> of Kate Saenko. 
-                                            <span class="timestamp">02/01/14</span>
-										</article>
-									</li>
-                                    <li>
-                                	<article class="post stub">
-											<header>
-												<h3><a href="http://www.inf-cv.uni-jena.de/fgvcbiodiv/">Moth datasets</a></h3>
-											</header>
-											These datasets can be used for fine-grained recognition with a large number of categories.
-                                            The images depict several moth species from Ecuador and Costa Rica and have been 
-                                            prepared and evaluated together with Wolfgang Wägele (ZFMK) and Gunnar Brehm (University of Jena).
-                                            See our <a href="http://hera.inf-cv.uni-jena.de:6680/pdf/Rodner15:FRD.pdf">paper</a> at the CVPR 2015 workshop for details.
-                                            <span class="timestamp">04/12/15</span>
-										</article>
-									</li>
+                <article>
+                    <div class="image centered"><img src="pimages/biomed.png" alt="" /></div>
+                    <header>
+                        <h3><a href="biomed.html">Robust Visual Recognition</a></h3>
+                    </header>
+                    Detection, Uncertainty Estimation for Vision Models
+                </article>
+
+                <article>
+                    <div class="image centered"><img src="pimages/biomed.png" alt="" /></div>
+                    <header>
+                        <h3><a href="biomed.html">Medical Vision</a></h3>
+                    </header>
+                    Medical Vision Applications, Microscopy
+                </article>
+
+                <article>
+                    <div class="image centered"><img src="pimages/biomed.png" alt="" /></div>
+                    <header>
+                        <h3><a href="biomed.html">Quality Control in Production</a></h3>
+                    </header>
+                    Data Analysis in Production, Visual Inspection
+                </article>
+
+                <footer>
+                    <p>
+                        A more detailed and up-to-date list can be found on
+                        <a href="https://scholar.google.de/citations?user=2ItLnFgAAAAJ&hl=en">google scholar</a>.
+                    </p>
+                </footer>
+        </div>
+    </section>
 
 
-								</ul>
-							</section>
-                        </div>
-					</section>
-			</div>
 
-{% include footer.html %}
+
+    <div class="wrapper style2">
+        <a name="recent"></a>
+        <article class="container special">
+            <header>
+                <h2>Recent and selected publications</h2>
+            </header>
+
+            {% include selectedpub.html %}
+        </article>
+    </div>
+
+
+    {% include footer.html %}
